@@ -1,4 +1,6 @@
 ﻿namespace G_NET_60_LINQ02;
+
+using System.Diagnostics.Metrics;
 using static G_NET_60_LINQ02.Source;
 
     internal class Program
@@ -124,6 +126,23 @@ using static G_NET_60_LINQ02.Source;
         //}
 
 
+        #endregion
+
+        #region Question09
+        //9. Using QUERY SYNTAX, group customers by Country, and for each  group select { Country, Count, TotalOrderValue }.
+
+        var customerGroups = from customer in CustomerList
+                             group customer by customer.Country into countryGroup
+                             select new
+                             {
+                                 Country = countryGroup.Key,
+                                 Count = countryGroup.Count(),
+                                 TotalOrderValue = countryGroup.Sum(c => c.Orders.Sum(o => o.Total))
+                             };
+        foreach (var group in customerGroups)
+        {
+            Console.WriteLine(group);
+        }
         #endregion
 
 
