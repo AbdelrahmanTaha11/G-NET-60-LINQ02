@@ -1,5 +1,6 @@
 ﻿namespace G_NET_60_LINQ02;
 
+using System.Collections.Concurrent;
 using System.Diagnostics.Metrics;
 using System.Drawing;
 using static G_NET_60_LINQ02.Source;
@@ -235,6 +236,16 @@ internal class Program
 
         //Console.WriteLine(firstProductOver50);
 
+
+        #endregion
+
+        #region Question17
+
+        //17. Try to get the first product with a price > $500. it returns null instead of throwing.
+
+        var firstProductOver500 = ProductList.FirstOrDefault(p => p.UnitPrice > 500);
+
+        Console.WriteLine(firstProductOver500); // null
 
         #endregion
 
