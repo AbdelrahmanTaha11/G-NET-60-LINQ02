@@ -1,11 +1,12 @@
 ﻿namespace G_NET_60_LINQ02;
 
 using System.Diagnostics.Metrics;
+using System.Drawing;
 using static G_NET_60_LINQ02.Source;
 
-    internal class Program
-    {
-        static void Main(string[] args)
+internal class Program
+{
+    static void Main(string[] args)
     {
 
         #region Question01
@@ -212,9 +213,24 @@ using static G_NET_60_LINQ02.Source;
 
         #endregion
 
+        #region Question15
+
+        //15. Build a Dictionary<int, Product> keyed by ProductID. Then  retrieve and print the product with ID = 18.
+
+        //var productDictionary = ProductList.Where(p => p.ProductID == 18).ToDictionary(p => p.ProductID);
+
+        //foreach (var product in productDictionary)
+        //{
+        //    Console.WriteLine(product.Value);
+        //}
+
+
+        #endregion
+
 
 
 
     }
 }
+
 
