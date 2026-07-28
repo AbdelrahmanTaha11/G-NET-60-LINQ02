@@ -97,17 +97,17 @@ using static G_NET_60_LINQ02.Source;
         #region Question07
         //7. Group products by Category and project only product names per group.
 
-        var GroupProductNames = ProductList.GroupBy(p => p.Category)
-                                         .Select(g => new { g.Key, ProductNames = g.Select(p => p.ProductName) });
+        //var GroupProductNames = ProductList.GroupBy(p => p.Category)
+        //                                 .Select(g => new { g.Key, ProductNames = g.Select(p => p.ProductName) });
 
-        foreach (var group in GroupProductNames)
-        {
-            Console.WriteLine($"Category: {group.Key}");
-            foreach (var productName in group.ProductNames)
-            {
-                Console.WriteLine($" - {productName}");
-            }
-        }
+        //foreach (var group in GroupProductNames)
+        //{
+        //    Console.WriteLine($"Category: {group.Key}");
+        //    foreach (var productName in group.ProductNames)
+        //    {
+        //        Console.WriteLine($" - {productName}");
+        //    }
+        //}
 
 
         #endregion
@@ -131,18 +131,27 @@ using static G_NET_60_LINQ02.Source;
         #region Question09
         //9. Using QUERY SYNTAX, group customers by Country, and for each  group select { Country, Count, TotalOrderValue }.
 
-        var customerGroups = from customer in CustomerList
-                             group customer by customer.Country into countryGroup
-                             select new
-                             {
-                                 Country = countryGroup.Key,
-                                 Count = countryGroup.Count(),
-                                 TotalOrderValue = countryGroup.Sum(c => c.Orders.Sum(o => o.Total))
-                             };
-        foreach (var group in customerGroups)
-        {
-            Console.WriteLine(group);
-        }
+        //var customerGroups = from customer in CustomerList
+        //                     group customer by customer.Country into countryGroup
+        //                     select new
+        //                     {
+        //                         Country = countryGroup.Key,
+        //                         Count = countryGroup.Count(),
+        //                         TotalOrderValue = countryGroup.Sum(c => c.Orders.Sum(o => o.Total))
+        //                     };
+        //foreach (var group in customerGroups)
+        //{
+        //    Console.WriteLine(group);
+        //}
+        #endregion
+
+        #region Question10
+
+        // 10. Calculate the total number of units in stock across all products
+        //var totalUnitsInStock = ProductList.Sum(p => p.UnitsInStock);
+
+        //Console.WriteLine($"Total units in stock: {totalUnitsInStock}");
+
         #endregion
 
 
