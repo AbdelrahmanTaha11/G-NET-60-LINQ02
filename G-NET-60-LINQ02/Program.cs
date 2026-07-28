@@ -154,6 +154,18 @@ using static G_NET_60_LINQ02.Source;
 
         #endregion
 
+        #region Question11
+
+        //11. Find the CHEAPEST and MOST EXPENSIVE product prices
+
+        //var cheapestProduct = ProductList.Min(p => p.UnitPrice);
+        //var mostExpensiveProduct = ProductList.Max(p => p.UnitPrice);
+
+        //Console.WriteLine($"Cheapest product price: {cheapestProduct}");
+        //Console.WriteLine($"Most expensive product price: {mostExpensiveProduct}");
+
+        #endregion
+
 
 
 
