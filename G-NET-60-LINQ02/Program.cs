@@ -196,6 +196,21 @@ using static G_NET_60_LINQ02.Source;
 
         #endregion
 
+        #region Question14
+
+        //14. Find countries that appear in list1 but NOT in list2 (case -insensitive).
+
+        //string[] list1 = { "Germany", "France", "UK", "Spain" };
+        //    string[] list2 = { "france", "SPAIN", "Italy" };
+
+        //var countriesInList1Only = list1.Except(list2, StringComparer.OrdinalIgnoreCase);
+
+        //foreach (var country in countriesInList1Only)
+        //{
+        //    Console.WriteLine(country);
+        //}
+
+        #endregion
 
 
 
