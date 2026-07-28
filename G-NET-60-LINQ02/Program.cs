@@ -227,6 +227,18 @@ internal class Program
 
         #endregion
 
+        #region Question16
+
+        //16. Get the first product whose price is greater than $50.
+
+        //var firstProductOver50 = ProductList.FirstOrDefault(p => p.UnitPrice > 50);
+
+        //Console.WriteLine(firstProductOver50);
+
+
+        #endregion
+
+
 
 
 
