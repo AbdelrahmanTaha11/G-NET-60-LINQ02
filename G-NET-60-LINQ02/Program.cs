@@ -110,6 +110,22 @@ using static G_NET_60_LINQ02.Source;
 
         #endregion
 
+        #region Question08
+        //8. Find all categories that have MORE THAN 3 products
+
+        //var categoriesWithMoreThanThreeProducts = ProductList.GroupBy(p => p.Category)
+        //    .Where(g => g.Count() > 3)
+        //    .Select(g => g.Key);
+
+        //foreach (var category in categoriesWithMoreThanThreeProducts)
+        //{
+
+        //    Console.WriteLine(category);
+        //}
+
+
+        #endregion
+
 
 
 
