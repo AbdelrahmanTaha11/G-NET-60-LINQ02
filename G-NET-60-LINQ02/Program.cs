@@ -280,19 +280,34 @@ internal class Program
 
         //20. Concatenate the first 3 product names with the first 3  customer company names into a single sequence.
 
-    //    var result = ProductList
-    //.Select(p => p.ProductName)
-    //.Take(3)
-    //.Concat(CustomerList.Select(c => c.CompanyName).Take(3));
+        //    var result = ProductList
+        //.Select(p => p.ProductName)
+        //.Take(3)
+        //.Concat(CustomerList.Select(c => c.CompanyName).Take(3));
 
-    //    foreach (var item in result)
-    //    {
-    //        Console.WriteLine(item);
-    //    }
-
-
+        //    foreach (var item in result)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
 
 
+
+
+
+        #endregion
+
+        #region Question21
+
+        //21. Pair each product with a customer (by position) and produce  string "ProductName sold to CompanyName".
+
+        var result = ProductList.Zip(CustomerList, (p, c) => $"{p.ProductName} sold to {c.CompanyName}");
+        
+        foreach (var item in result) {
+            
+            
+            Console.WriteLine(item);
+        
+        }
 
         #endregion
 
