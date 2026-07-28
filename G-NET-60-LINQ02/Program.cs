@@ -59,6 +59,24 @@ using static G_NET_60_LINQ02.Source;
 
         #endregion
 
+        #region Question05
+        //5. Check if the ID list contains 9
+
+        //var idList = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+        //var containsNine = idList.Contains(9); 
+        //var containsten = idList.Contains(10); 
+
+
+        //Console.WriteLine(containsNine); //true
+        //Console.WriteLine(containsten); //false  
+
+
+
+
+
+        #endregion
+
 
 
     }
