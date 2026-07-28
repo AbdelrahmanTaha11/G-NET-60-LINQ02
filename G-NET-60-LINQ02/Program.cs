@@ -249,6 +249,18 @@ internal class Program
 
         #endregion
 
+        #region Question18
+
+        //18. Generate a multiplication table row for 7
+
+        //var multiplicationTableRowFor7 = Enumerable.Range(1, 10).Select(i => 7 * i);
+
+        //foreach (var value in multiplicationTableRowFor7)
+        //{
+        //    Console.WriteLine(value);
+        //}
+
+        #endregion
 
 
 
