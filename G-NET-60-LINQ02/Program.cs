@@ -49,6 +49,16 @@ using static G_NET_60_LINQ02.Source;
 
         #endregion
 
+        #region Question04
+
+        //Check if ALL products in the "Seafood" category are in stock
+
+        //var allInStock = ProductList.Where(p => p.Category == "Seafood").All(p => p.UnitsInStock > 0);
+
+        //Console.WriteLine(allInStock);
+
+        #endregion
+
 
 
     }
