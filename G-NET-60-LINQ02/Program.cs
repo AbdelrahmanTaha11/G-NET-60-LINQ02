@@ -75,7 +75,24 @@ using static G_NET_60_LINQ02.Source;
 
 
 
+        #endregion 
+
+        //معلش مخدش بالي من الليستا اللي انتو كاتبنها بس هي هي نفس الفكرة  Q 05  :)
+
+        #region Question06
+        // 6.Group all products by Category and print each group with its product count.
+
+        //var GroupProduct = ProductList.GroupBy(P => P.Category)
+        //                              .Select(g => new { g.Key, ProductCount = g.Count() });
+
+        //foreach (var group in GroupProduct)
+        //{
+        //    Console.WriteLine(group);
+        //}
+
         #endregion
+
+
 
 
 
