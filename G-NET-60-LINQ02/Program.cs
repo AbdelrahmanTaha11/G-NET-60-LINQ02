@@ -166,6 +166,20 @@ using static G_NET_60_LINQ02.Source;
 
         #endregion
 
+        #region Question12
+
+        //12. Get a distinct list of all product categories
+
+        //var distinctCategories = ProductList.Select(p => p.Category).Distinct();
+
+        //foreach (var category in distinctCategories)
+        //{
+        //    Console.WriteLine(category);
+        //}
+
+
+        #endregion
+
 
 
 
