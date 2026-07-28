@@ -262,6 +262,20 @@ internal class Program
 
         #endregion
 
+        #region Question19
+
+        //19. Generate even numbers between 1 and 30.
+
+        //var evenNumbers = Enumerable.Range(1, 30).Where(n => n % 2 == 0);
+
+        //foreach (var number in evenNumbers)
+        //{
+        //    Console.WriteLine(number);
+        //}
+
+
+        #endregion
+
 
 
 
